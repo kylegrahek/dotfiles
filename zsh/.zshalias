@@ -34,7 +34,7 @@ export EDITOR=vim
 alias ls='ls --color'
 alias ll='ls -l --color'
 
-# ls, the common ones I use a lot shortened for rapid fire usage
+# ls
 alias l='ls -lFh  --color'   #size,show type,human readable
 alias la='ls -lAFh --color'   #long list,show almost all,show type,human readable
 alias lr='ls -tRFh --color'   #sorted by date,recursive,show type,human readable
@@ -50,7 +50,6 @@ alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 alias grep='grep --color'
 alias sgrep='grep --color -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
-alias t='tail -f'
 
 # Command line head / tail shortcuts
 alias -g H='| head'
@@ -63,6 +62,7 @@ alias -g CA="2>&1 | cat -A"
 alias -g NE="2> /dev/null"
 alias -g NUL="> /dev/null 2>&1"
 alias -g P="2>&1| pygmentize -l pytb"
+alias t='tail -f'
 
 # disk space
 alias dud='du -d 1 -h'
@@ -104,8 +104,9 @@ gitupdate() {
 alias gp=gitpush
 alias gu=gitupdate
 
+# wget
+alias wget='wget --progress=bar'
 
 # Launcher Etcher for usb flashing
-
 alias etcher='~/appImages/balenaEtcher-1.5.117-x64.AppImage'
 
