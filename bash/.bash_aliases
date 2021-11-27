@@ -28,12 +28,8 @@ alias lrt='ls -1Fcrt --color'
 
 # Grep coloring
 alias grep='grep --color=auto'
-# Launcher Etcher for usb flashing
-
-
 
 # systemctl and journalctl shortcuts
-
 alias sctl='systemctl'
 alias jctl='journalctl'
 
@@ -62,7 +58,6 @@ ex ()
   fi
 }
 
-alias t='tail -f'
 
 # Command line head / tail shortcuts
 alias H='| head'
@@ -75,6 +70,7 @@ alias CA="2>&1 | cat -A"
 alias NE="2> /dev/null"
 alias NUL="> /dev/null 2>&1"
 alias P="2>&1| pygmentize -l pytb"
+alias t='tail -f'
 
 # disk space
 alias dud='du -d 1 -h'
@@ -92,6 +88,8 @@ alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
 
-# Launcher Etcher for usb flashing
+# wget
+alias wget='wget --progress=bar'
 
+# Launcher Etcher for usb flashing
 alias etcher='~/appImages/balenaEtcher-1.5.117-x64.AppImage'
